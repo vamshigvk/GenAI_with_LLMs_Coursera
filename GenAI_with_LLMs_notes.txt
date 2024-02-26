@@ -1,0 +1,34 @@
+# libraries
+python3.7
+torch==1.13.1
+transformers==4.27.2
+
+# prompt engineer technique to start learn the language model with:
+0 shot, 1 shot and few shot Inference
+
+# The text that you feed into the model is called the prompt, the act of generating text is known as inference, and the output text is known as the completion
+
+# Providing examples inside the context window is called in-context learning.
+
+# notebook s3 location
+aws s3 cp --recursive s3://dlai-generative-ai/labs/w1-549876/ ./
+
+# top-k
+top k value which instructs the model to choose from only the k tokens with the highest probability
+
+# top-p
+top p setting to limit the random sampling to the predictions whose combined probabilities do not exceed p
+
+# temp
+-parameter that you can use to control the randomness of the model output is known as temperature.
+-the higher the temperature, the higher the randomness, and the lower the temperature, the lower the randomness
+
+# encoding-only models are also known as auto-encoding models (MLM masked language modeling technique), ex: BERT, ROBERTA. Usecases: sentiment analysis, NER, word classification
+
+# encoding-decoding models aka sequence-to-sequence models (CLM causal Language Modeling technique): BART, T5. Usecases: Translation, text-summarization, question answering
+
+# decoding-only models aka auto-regressive models(span corruption technique), ex: GPT and BLOOM. Usecases: text-generation 
+
+# One technique that you can use to reduce the memory is called quantization, using float, bfloat, int
+
+# 
